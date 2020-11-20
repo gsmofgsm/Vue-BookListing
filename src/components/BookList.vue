@@ -2,7 +2,11 @@
   <div>
     <h1>{{ title }}</h1>
     <ul>
-      <book-item v-for="book in books" :key="book.title" :book="book"></book-item>
+      <book-item
+        v-for="book in books"
+        :key="book.title"
+        :book="book"
+      ></book-item>
     </ul>
   </div>
 </template>
@@ -23,13 +27,10 @@ export default {
     };
   },
   components: {
-    BookItem
-    BookItem
     BookItem,
   },
 };
-</scr
-    BookItemipt>
+</script>
 
 <style lang="scss" scoped>
 h1,
